@@ -1,8 +1,9 @@
 package entity
 
 import (
-	"github.com/stretchr/testify/require"
 	"testing"
+
+	"github.com/stretchr/testify/require"
 )
 
 func runEntityTestSuite(t *testing.T, m Manager) {
@@ -16,7 +17,7 @@ func runEntityTestSuite(t *testing.T, m Manager) {
 		runTestIsValidManager(t, m)
 	})
 	t.Run("Len", func(t *testing.T) {
-
+		runTestLenManager(t, m)
 	})
 }
 
@@ -39,7 +40,7 @@ func runTestLenManager(t *testing.T, m Manager) {
 		e := m.New()
 		m.Invalidate(e)
 		require.Equal(t, prev, m.Len())
-		e = m.New()
+		m.New()
 		require.Equal(t, prev+1, m.Len())
 	})
 }

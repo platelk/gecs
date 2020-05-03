@@ -40,6 +40,6 @@ func (em *SliceManager) Invalidate(e Entity) {
 	em.garbage = append(em.garbage, e.ID())
 }
 
-func (em *SliceManager) Len() int {
-	return len(em.entities) - len(em.garbage)
+func (em *SliceManager) Len() uint {
+	return uint(len(em.entities) - len(em.garbage))
 }

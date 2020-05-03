@@ -1,20 +1,21 @@
 package storage
 
 import (
-	"github.com/stretchr/testify/require"
 	"testing"
 	"gecs/component"
 	"gecs/entity"
+
+	"github.com/stretchr/testify/require"
 )
 
 func runStorageTestSuite(t *testing.T, em entity.Manager, compCreator func() component.Component, s Storage) {
-	t.Run("Add", func(t *testing.T) {
+	t.Run("AddStorage", func(t *testing.T) {
 		runTestStorageAdd(t, em, compCreator, s)
 	})
-	t.Run("Del", func(t *testing.T) {
+	t.Run("DelStorage", func(t *testing.T) {
 		runTestStorageDel(t, em, compCreator, s)
 	})
-	t.Run("Get", func(t *testing.T) {
+	t.Run("GetStorage", func(t *testing.T) {
 		runTestStorageGet(t, em, compCreator, s)
 	})
 	t.Run("Len", func(t *testing.T) {

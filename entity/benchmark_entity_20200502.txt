@@ -1,0 +1,234 @@
+goos: linux
+goarch: amd64
+pkg: gecs/entity
+BenchmarkEntityManagerSuite
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=10
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=10-12         	 6218109	       176 ns/op	      88 B/op	       2 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=10
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=10-12         	 4684759	       257 ns/op	      96 B/op	       3 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=10
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=10-12         	 6514078	       187 ns/op	      96 B/op	       3 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=25
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=25-12                                  	 4389919	       266 ns/op	      88 B/op	       2 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=25
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=25-12                       	 2494861	       481 ns/op	      96 B/op	       3 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=25
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=25-12         	 3594741	       304 ns/op	      96 B/op	       3 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=50
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=50-12                                  	 2809514	       435 ns/op	      88 B/op	       2 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=50
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=50-12                       	 1377898	       889 ns/op	      96 B/op	       3 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=50
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=50-12         	 2259763	       530 ns/op	      96 B/op	       3 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=100
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=100-12                                 	 1415264	       849 ns/op	     120 B/op	       3 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=100
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=100-12                      	  744884	      1722 ns/op	      96 B/op	       3 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=100
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=100-12        	 1000000	      1050 ns/op	     128 B/op	       4 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=200
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=200-12                                 	  770629	      1611 ns/op	     120 B/op	       3 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=200
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=200-12                      	  360598	      3443 ns/op	      96 B/op	       3 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=200
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=200-12        	  575210	      1988 ns/op	     128 B/op	       4 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=400
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=400-12                                 	  383869	      3218 ns/op	     200 B/op	       4 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=400
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=400-12                      	  194109	      6682 ns/op	      96 B/op	       3 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=400
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=400-12        	  311560	      3897 ns/op	     208 B/op	       5 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=800
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=800-12                                 	  206510	      6338 ns/op	     376 B/op	       5 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=800
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=800-12                      	   96481	     14002 ns/op	      96 B/op	       3 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=800
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=800-12        	  164578	      7584 ns/op	     384 B/op	       6 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=1600
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=1600-12                                	   87372	     12528 ns/op	     760 B/op	       6 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=1600
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=1600-12                     	   43340	     25958 ns/op	      96 B/op	       3 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=1600
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=1600-12       	   75378	     15119 ns/op	     768 B/op	       7 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=3200
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=3200-12                                	   44996	     26557 ns/op	    1528 B/op	       7 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=3200
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=3200-12                     	   20413	     60423 ns/op	      96 B/op	       3 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=3200
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=3200-12       	   38893	     33166 ns/op	     768 B/op	       7 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=5000
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=5000-12                                	   26563	     40174 ns/op	    1528 B/op	       7 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=5000
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=5000-12                     	   12624	     84463 ns/op	      96 B/op	       3 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=5000
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=5000-12       	   24606	     50004 ns/op	    1536 B/op	       8 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=10000
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=10000-12                               	   13821	     85537 ns/op	    3064 B/op	       8 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=10000
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=10000-12                    	    7215	    189882 ns/op	      96 B/op	       3 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=10000
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=10000-12      	   10000	    102627 ns/op	    3072 B/op	       9 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=30000
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=30000-12                               	    5630	    231793 ns/op	   12280 B/op	      10 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=30000
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=30000-12                    	    2362	    494114 ns/op	      96 B/op	       3 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=30000
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=30000-12      	    4550	    291202 ns/op	   12288 B/op	      11 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=100000
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=100000-12                              	    1576	    728086 ns/op	   49144 B/op	      12 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=100000
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=100000-12                   	     730	   1672668 ns/op	      96 B/op	       3 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=100000
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=100000-12     	    1287	    937461 ns/op	   24576 B/op	      12 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=500000
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=500000-12                              	     324	   3737668 ns/op	  196600 B/op	      14 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=500000
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=500000-12                   	     152	   8215739 ns/op	      96 B/op	       3 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=500000
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=500000-12     	     276	   4502738 ns/op	  196608 B/op	      15 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=1000000
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=1000000-12                             	     160	   7555331 ns/op	  393208 B/op	      15 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=1000000
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=1000000-12                  	      76	  17531733 ns/op	      96 B/op	       3 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=1000000
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=1000000-12    	     130	   8999662 ns/op	  393216 B/op	      16 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=2000000
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=2000000-12                             	      81	  14972292 ns/op	  786424 B/op	      16 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=2000000
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=2000000-12                  	      42	  33446810 ns/op	      96 B/op	       3 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=2000000
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=2000000-12    	      62	  18031153 ns/op	  786432 B/op	      17 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=5000000
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=5000000-12                             	      33	  36482401 ns/op	 1572856 B/op	      17 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=5000000
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=5000000-12                  	      15	  77098967 ns/op	      96 B/op	       3 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=5000000
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=5000000-12    	      28	  43931256 ns/op	 1572864 B/op	      18 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=10000000
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=10000000-12                            	      16	  70623957 ns/op	 3145727 B/op	      18 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=10000000
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=10000000-12                 	       7	 164848945 ns/op	      96 B/op	       3 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=10000000
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=10000000-12   	      14	  90241973 ns/op	 3145728 B/op	      19 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=20000000
+BenchmarkEntityManagerSuite/multiple-create/kind=bitset/size=20000000-12                            	       8	 151872814 ns/op	 6291456 B/op	      19 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=20000000
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=bitset/size=20000000-12                 	       3	 353749773 ns/op	      96 B/op	       3 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=20000000
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=bitset/size=20000000-12   	       6	 174774771 ns/op	 6291456 B/op	      20 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=10
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=10-12                                   	 5997967	       266 ns/op	     168 B/op	       5 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=10
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=10-12                        	 4200200	       289 ns/op	      96 B/op	       7 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=10
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=10-12          	 4381680	       270 ns/op	     176 B/op	       6 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=25
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=25-12                                   	 2898872	       349 ns/op	     296 B/op	       6 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=25
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=25-12                        	 2030762	       602 ns/op	     160 B/op	      15 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=25
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=25-12          	 2775192	       534 ns/op	     312 B/op	       8 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=50
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=50-12                                   	 1898497	       647 ns/op	     552 B/op	       7 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=50
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=50-12                        	 1000000	      1363 ns/op	     256 B/op	      27 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=50
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=50-12          	 1439613	       745 ns/op	     576 B/op	      10 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=100
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=100-12                                  	 1239183	       949 ns/op	    1064 B/op	       8 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=100
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=100-12                       	  536562	      2301 ns/op	     456 B/op	      52 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=100
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=100-12         	 1000000	      1263 ns/op	    1104 B/op	      13 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=200
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=200-12                                  	  727767	      1778 ns/op	    2088 B/op	       9 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=200
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=200-12                       	  250402	      4639 ns/op	     856 B/op	     102 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=200
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=200-12         	  550126	      2111 ns/op	    2168 B/op	      19 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=400
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=400-12                                  	  458900	      2740 ns/op	    4136 B/op	      10 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=400
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=400-12                       	  126253	      9192 ns/op	    1656 B/op	     202 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=400
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=400-12         	  297476	      3959 ns/op	    4296 B/op	      30 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=800
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=800-12                                  	  233018	      7053 ns/op	    8232 B/op	      11 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=800
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=800-12                       	   61554	     17829 ns/op	    3256 B/op	     402 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=800
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=800-12         	  156381	      7612 ns/op	    8552 B/op	      51 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=1600
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=1600-12                                 	  116137	     12777 ns/op	   20392 B/op	      13 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=1600
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=1600-12                      	   34206	     35484 ns/op	    6456 B/op	     802 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=1600
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=1600-12        	   85768	     18927 ns/op	   21032 B/op	      93 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=3200
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=3200-12                                 	   56920	     22933 ns/op	   58536 B/op	      16 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=3200
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=3200-12                      	   16898	     70137 ns/op	   12856 B/op	    1602 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=3200
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=3200-12        	   36867	     36294 ns/op	   43432 B/op	     175 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=5000
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=5000-12                                 	   35874	     38264 ns/op	   79016 B/op	      17 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=5000
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=5000-12                      	   10000	    110316 ns/op	   20056 B/op	    2502 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=5000
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=5000-12        	   25500	     49261 ns/op	   81016 B/op	     267 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=10000
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=10000-12                                	   19228	     68525 ns/op	  147240 B/op	      19 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=10000
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=10000-12                     	    5764	    227195 ns/op	   40056 B/op	    5002 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=10000
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=10000-12       	   12270	    124922 ns/op	  151240 B/op	     519 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=30000
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=30000-12                                	    5382	    222730 ns/op	  499497 B/op	      23 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=30000
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=30000-12                     	    1878	    678232 ns/op	  120056 B/op	   15002 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=30000
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=30000-12       	    4270	    292000 ns/op	  511498 B/op	    1523 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=100000
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=100000-12                               	    1556	    747406 ns/op	 2293549 B/op	      29 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=100000
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=100000-12                    	     546	   2380596 ns/op	  400057 B/op	   50002 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=100000
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=100000-12      	    1209	   1129718 ns/op	 1842031 B/op	    5028 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=500000
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=500000-12                               	     350	   4196633 ns/op	11648835 B/op	      36 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=500000
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=500000-12                    	     100	  11422422 ns/op	 2000064 B/op	  250002 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=500000
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=500000-12      	     236	   5542692 ns/op	 9473174 B/op	   25035 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=1000000
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=1000000-12                              	     150	   7505848 ns/op	22994747 B/op	      39 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=1000000
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=1000000-12                   	      57	  24418243 ns/op	 4000076 B/op	  500002 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=1000000
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=1000000-12     	     120	   8861494 ns/op	18741718 B/op	   50038 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=2000000
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=2000000-12                              	      78	  13341205 ns/op	45178682 B/op	      42 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=2000000
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=2000000-12                   	      28	  45306080 ns/op	 8000081 B/op	 1000002 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=2000000
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=2000000-12     	      72	  17906160 ns/op	36885584 B/op	  100041 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=5000000
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=5000000-12                              	      31	  32302196 ns/op	110747450 B/op	      46 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=5000000
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=5000000-12                   	       9	 116975844 ns/op	20000133 B/op	 2500002 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=5000000
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=5000000-12     	      25	  42841731 ns/op	112747478 B/op	  250046 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=10000000
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=10000000-12                             	      19	  64235603 ns/op	216637268 B/op	      49 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=10000000
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=10000000-12                  	       5	 231394809 ns/op	40000249 B/op	 5000002 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=10000000
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=10000000-12    	      13	  84206483 ns/op	220637297 B/op	  500049 allocs/op
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=20000000
+BenchmarkEntityManagerSuite/multiple-create/kind=slice/size=20000000-12                             	       9	 116222679 ns/op	423493445 B/op	      52 allocs/op
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=20000000
+BenchmarkEntityManagerSuite/1-create-then-1-invalidate/kind=slice/size=20000000-12                  	       3	 481172942 ns/op	80000352 B/op	10000002 allocs/op
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=20000000
+BenchmarkEntityManagerSuite/multiple-create-then-invalidate-every-10/kind=slice/size=20000000-12    	       6	 182125713 ns/op	431493488 B/op	 1000052 allocs/op
+PASS
+ok  	gecs/entity	183.702s

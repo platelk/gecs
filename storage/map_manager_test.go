@@ -14,6 +14,6 @@ func TestNewDefaultManager(t *testing.T) {
 		func(t string) component.Component {
 			return component.NewTag(t)
 		},
-		NewDefaultManager(),
+		NewMapManager(),
 	)
 }

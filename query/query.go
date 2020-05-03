@@ -56,10 +56,10 @@ func (r *Result) Merge(other *Result) {
 	}
 	for e, s := range other.components {
 		for t, c := range s {
-				if _, ok := r.components[e]; !ok {
-					r.components[e] = make(map[string]component.Component)
-				}
-				r.components[e][t] = c
+			if _, ok := r.components[e]; !ok {
+				r.components[e] = make(map[string]component.Component)
+			}
+			r.components[e][t] = c
 		}
 	}
 }
@@ -100,10 +100,10 @@ func (eq *EntityQuery) Exec(sm storage.Manager) *Result {
 	entities := make(map[uint32]entity.Entity)
 	components := make(map[uint32]map[string]component.Component)
 	if len(eq.and) > 0 {
-		sm.Get(eq.and[0]).Iter(func(e entity.Entity, c component.Component) {
+		sm.GetStorage(eq.and[0]).Iter(func(e entity.Entity, c component.Component) {
 			cs := []component.Component{c}
 			for _, t := range eq.and[1:] {
-				s := sm.Get(t)
+				s := sm.GetStorage(t)
 				if s != nil {
 					c = s.Get(e)
 					if c == nil {

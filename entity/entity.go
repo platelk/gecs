@@ -4,7 +4,7 @@ package entity
 // The world owns a collection of entities (either in a flat list or a hierarchy).
 // Each entity has a unique identifier or name, for the sake of ease of use.
 type Entity struct {
-	id uint32
+	id      uint32
 	version uint32
 }
 
@@ -19,5 +19,10 @@ type Manager interface {
 	New() Entity
 	IsValid(e Entity) bool
 	Invalidate(e Entity)
-	Len() int
+	Len() uint
+}
+
+// NewManager will return the default manager to use for entity creation
+func NewManager() Manager {
+	return NewBitSetManager()
 }

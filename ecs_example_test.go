@@ -1,20 +1,13 @@
-# GECS
+package ecs_test
 
-`gecs` is an implementation of the Entity Component System 
-which define an other model to modelise game logic than standard OOP
-
-## Introduction
-
-## Features
-
-* Manage entity <=> components relation
-* Handle multiple type of storage for component
-* Systems can define relationship between each other to create execution plan
-* Query entities based on their components 
-
-# Example
-
-```go
+import (
+	"gecs/component"
+	"gecs/dispatcher"
+	"gecs/entity"
+	"gecs/query"
+	"gecs/storage"
+	"gecs/system"
+)
 
 var PositionType = &Position{}
 
@@ -102,5 +95,3 @@ func ExampleBasic() {
 		Build()
 	d.Dispatch(data)
 }
-
-```

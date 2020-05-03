@@ -12,25 +12,39 @@ type Typer interface {
 // or Emitter components and draw them to the screen.
 type System interface {
 	Typer
+	Plan() *Plan
 	Run(d *Data)
 }
 
 type systemImpl struct {
 	t string
+	p *Plan
 	f func(*Data)
 }
 
 func New(s string, f func(*Data)) System {
 	return &systemImpl{
+		p: &Plan{},
 		t: s,
 		f: f,
 	}
 }
 
+func NewWithPlan(s string, p Plan, f func(*Data)) System {
+	return &systemImpl{
+		p: &p,
+		t: s,
+		f: f,
+	}
+}
 func (s *systemImpl) Type() string {
 	return s.t
 }
 
 func (s *systemImpl) Run(d *Data) {
 	s.f(d)
+}
+
+func (s *systemImpl) Plan() *Plan {
+	return s.p
 }

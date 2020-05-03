@@ -36,9 +36,9 @@ var ComflabulationType = &Comflabulation{}
 
 type Comflabulation struct {
 	component.Base
-	Thingy float32
-	Dingy int
-	Mingy bool
+	Thingy  float32
+	Dingy   int
+	Mingy   bool
 	Stringy string
 }
 
@@ -84,7 +84,7 @@ func BenchmarkCreateEntities(b *testing.B) {
 	entityManager := map[string]func() entity.Manager{
 		"slice": func() entity.Manager { return entity.NewSliceManager() },
 	}
-	storageCreator := map[string]func(c component.Component) storage.Storage {
+	storageCreator := map[string]func(c component.Component) storage.Storage{
 		"map": func(c component.Component) storage.Storage {
 			return storage.NewMap(c)
 		},
@@ -97,10 +97,10 @@ func BenchmarkCreateEntities(b *testing.B) {
 					for i := 0; i < b.N; i++ {
 						n := it
 						em := emCreator()
-						sm := storage.NewDefaultManager()
-						sm.Add(sCreator(DirectionType))
-						sm.Add(sCreator(PositionType))
-						sm.Add(sCreator(ComflabulationType))
+						sm := storage.NewMapManager()
+						sm.AddStorage(sCreator(DirectionType))
+						sm.AddStorage(sCreator(PositionType))
+						sm.AddStorage(sCreator(ComflabulationType))
 						data := system.NewData(em, sm)
 						for ; n > 0; n-- {
 							_, _ = data.NewEntity().
@@ -116,7 +116,6 @@ func BenchmarkCreateEntities(b *testing.B) {
 	}
 }
 
-
 func BenchmarkUpdateSystem(b *testing.B) {
 	moveSys := newMoveSystem()
 	comfSys := newComflabSystem()
@@ -124,16 +123,16 @@ func BenchmarkUpdateSystem(b *testing.B) {
 		it := n
 		b.Run(fmt.Sprintf("2-system-update/size=%d", it), func(b *testing.B) {
 			em := entity.NewSliceManager()
-			sm := storage.NewDefaultManager()
-			sm.Add(storage.NewMap(DirectionType))
-			sm.Add(storage.NewMap(PositionType))
-			sm.Add(storage.NewMap(ComflabulationType))
+			sm := storage.NewMapManager()
+			sm.AddStorage(storage.NewMap(DirectionType))
+			sm.AddStorage(storage.NewMap(PositionType))
+			sm.AddStorage(storage.NewMap(ComflabulationType))
 			data := system.NewData(em, sm)
 			for i := 0; i < it; i++ {
 				builder := data.NewEntity().
 					WithComponent(&Position{}).
 					WithComponent(&Direction{})
-				if it % 2 == 0 {
+				if it%2 == 0 {
 					builder.WithComponent(&Comflabulation{})
 				}
 				_, _ = builder.Build()
